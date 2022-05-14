@@ -1,8 +1,11 @@
 const express = require('express')
+const cors = require("cors");
 const messagesRouter = require("./router/messagesRouter");
+const utilsRouter = require("./router/utilsRouter")
 const bodyParser = require("body-parser");
 
 const app = express();
+app.use(cors());
 
 // for parsing application/json
 app.use(bodyParser.json()); 
@@ -11,6 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/messages", messagesRouter);
+app.use("/utils", utilsRouter);
 
 //am creat un server aici
 const port = process.env.PORT || 8080;
