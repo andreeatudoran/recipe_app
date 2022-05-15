@@ -54,7 +54,7 @@ Referințe:
 - https://docs.sendgrid.com
 - https://docs.sendgrid.com
 
-Link video youtube:
+Link video youtube: https://youtu.be/2AXxcVGeFYY 
 
 Link heroku backend: https://desolate-coast-60481.herokuapp.com/ 
 
